@@ -1,0 +1,33 @@
+GET http://localhost:8080/customers/1
+
+{
+    "id": 1,
+    "fullName": "John Doe",
+    "age": 25
+}
+
+###3. Create New Customer
+POST http://localhost:8080/customers
+Content-Type: application/json
+
+{
+    "fullName": "Alice Johnson",
+    "age": 28
+}
+
+
+###4. Update Customer by ID
+PUT http://localhost:8080/customers/1
+Content-Type: application/json
+
+{
+    "fullName": "Johnathan Doe",
+    "age": 26
+}
+
+
+
+### Delete Customer by ID
+DELETE http://localhost:8080/customers/1
+
+true
