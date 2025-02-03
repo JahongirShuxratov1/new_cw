@@ -4,12 +4,26 @@ import com.example.new_cw.Car.model.Car;
 import com.example.new_cw.Car.service.CarService;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
 @RequestMapping("/cars")
 public class CarController {
+    @GetMapping("/brand/{brand}")
+    public List<Car> getCarsByBrand(@PathVariable String brand) {
+        return carService.getCarsByBrand(brand);
+    }
 
+    @GetMapping("/model/{model}")
+    public List<Car> getCarsByModel(@PathVariable String model) {
+        return carService.getCarsByModel(model);
+    }
+
+    @GetMapping("/price-greater-than/{price}")
+    public List<Car> getCarsByPriceGreaterThan(@PathVariable BigDecimal price) {
+        return carService.getCarsByPriceGreaterThan(price);
+    }
     private final CarService carService;
 
     public CarController(CarService carService) {

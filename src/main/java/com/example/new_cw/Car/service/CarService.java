@@ -3,6 +3,8 @@ package com.example.new_cw.Car.service;
 import com.example.new_cw.Car.model.Car;
 import com.example.new_cw.Car.repository.CarRepository;
 import org.springframework.stereotype.Service;
+
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
@@ -10,6 +12,7 @@ import java.util.Optional;
 public class CarService {
 
     private final CarRepository carRepository;
+
 
     public CarService(CarRepository carRepository) {
         this.carRepository = carRepository;
@@ -42,4 +45,18 @@ public class CarService {
         }
         return false;
     }
+
+
+    public List<Car> getCarsByBrand(String brand) {
+        return carRepository.findByBrand(brand);
+    }
+
+    public List<Car> getCarsByModel(String model) {
+        return carRepository.findByModel(model);
+    }
+
+    public List<Car> getCarsByPriceGreaterThan(BigDecimal price) {
+        return carRepository.findByDailyPriceGreaterThan(price);
+    }
+
 }
