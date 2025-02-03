@@ -1,10 +1,10 @@
 package com.example.new_cw.Rental;
 
-import lombok.RequiredArgsConstructor;
+import com.example.new_cw.Rental.model.Rental;
+import com.example.new_cw.Rental.service.RentalService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 

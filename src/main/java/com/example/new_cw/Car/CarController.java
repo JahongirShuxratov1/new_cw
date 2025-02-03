@@ -1,16 +1,10 @@
 package com.example.new_cw.Car;
 
-import org.springframework.http.ResponseEntity;
+import com.example.new_cw.Car.model.Car;
+import com.example.new_cw.Car.service.CarService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
-
-
-import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/cars")

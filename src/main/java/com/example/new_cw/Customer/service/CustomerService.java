@@ -1,5 +1,7 @@
-package com.example.new_cw.Customer;
+package com.example.new_cw.Customer.service;
 
+import com.example.new_cw.Customer.model.Customer;
+import com.example.new_cw.Customer.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;

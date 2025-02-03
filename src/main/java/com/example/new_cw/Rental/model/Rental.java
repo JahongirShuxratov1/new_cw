@@ -1,4 +1,4 @@
-package com.example.new_cw.Rental;
+package com.example.new_cw.Rental.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

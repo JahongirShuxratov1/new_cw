@@ -1,8 +1,7 @@
-package com.example.new_cw.Rental;
+package com.example.new_cw.Rental.service;
 
-import com.example.new_cw.Rental.Rental;
-import com.example.new_cw.Rental.RentalRepository;
-import lombok.RequiredArgsConstructor;
+import com.example.new_cw.Rental.model.Rental;
+import com.example.new_cw.Rental.repository.RentalRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;

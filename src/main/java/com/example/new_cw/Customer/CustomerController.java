@@ -1,9 +1,10 @@
 package com.example.new_cw.Customer;
 
+import com.example.new_cw.Customer.model.Customer;
+import com.example.new_cw.Customer.service.CustomerService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/customers")

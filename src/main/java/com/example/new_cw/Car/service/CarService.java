@@ -1,5 +1,7 @@
-package com.example.new_cw.Car;
+package com.example.new_cw.Car.service;
 
+import com.example.new_cw.Car.model.Car;
+import com.example.new_cw.Car.repository.CarRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;

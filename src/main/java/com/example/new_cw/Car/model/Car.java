@@ -1,4 +1,4 @@
-package com.example.new_cw.Car;
+package com.example.new_cw.Car.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
